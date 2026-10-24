@@ -18,7 +18,11 @@ jobs:
           distribution: temurin
           java-version: "21"
 
-      - uses: android-actions/setup-android@v3
+      - name: Android SDK
+        run: |
+          SDKMANAGER=$(command -v sdkmanager || find "${ANDROID_HOME:-/usr/local/lib/android/sdk}" -name sdkmanager -type f | head -1)
+          yes | "$SDKMANAGER" --licenses > /dev/null 2>&1 || true
+          "$SDKMANAGER" "platforms;android-36" "build-tools;36.0.0"
 
       - name: Кэш Gradle
         uses: actions/cache@v4
