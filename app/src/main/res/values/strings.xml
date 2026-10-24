@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Диктофон</string>
+    <string name="title">Диктофон для занятий</string>
+    <string name="status_idle">Нажмите, чтобы начать запись</string>
+    <string name="status_recording">Идёт запись</string>
+    <string name="status_ready">Запись готова — нажмите, чтобы послушать</string>
+    <string name="status_playing">Воспроизведение</string>
+    <string name="status_paused">Пауза</string>
+    <string name="status_saving">Сохранение…</string>
+    <string name="btn_record">Начать запись</string>
+    <string name="btn_stop">Остановить запись</string>
+    <string name="btn_play">Воспроизвести</string>
+    <string name="btn_pause">Пауза</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="btn_new_record">Новая запись</string>
+    <string name="saved_to">Сохранено в «Музыка/Диктофон»</string>
+    <string name="save_failed">Не удалось сохранить запись</string>
+    <string name="permission_needed">Для записи нужен доступ к микрофону</string>
+    <string name="permission_settings">Открыть настройки</string>
+    <string name="permission_cancel">Позже</string>
+    <string name="permission_rationale">Разрешите доступ к микрофону, иначе запись не начнётся.</string>
+    <string name="hint_new_record_wipes">Новая запись заменит текущую</string>
+    <string name="record_error">Не удалось начать запись</string>
+    <string name="playback_error">Не удалось воспроизвести запись</string>
+    <string name="cancel">Отмена</string>
+    <string name="timer_zero">00:00,0</string>
+</resources>

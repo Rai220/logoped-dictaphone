@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_top">#12151C</color>
+    <color name="bg_bottom">#080A0E</color>
+    <color name="surface">#1A1F2A</color>
+    <color name="text_primary">#F4F6FB</color>
+    <color name="text_secondary">#8E97AB</color>
+    <color name="accent">#7C8CFF</color>
+    <color name="record">#FF4D5E</color>
+    <color name="stop">#FFB020</color>
+    <color name="play">#2FD08B</color>
+    <color name="track">#252C3A</color>
+</resources>
