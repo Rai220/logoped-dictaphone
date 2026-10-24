@@ -44,11 +44,14 @@ jobs:
           name: dictaphone-apk
           path: app/build/outputs/apk/**/*.apk
 
+      - name: Имя APK для релиза
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: cp app/build/outputs/apk/release/app-release.apk "dictaphone-${GITHUB_REF_NAME#v}.apk"
+
       - name: Публикация релиза
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
-          files: app/build/outputs/apk/release/app-release.apk
-          name: dictaphone-${{ github.ref_name }}.apk
+          files: dictaphone-*.apk
           generate_release_notes: true
           append_body: true
